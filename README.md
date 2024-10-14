@@ -14,6 +14,10 @@
   - [ ] clean all historic
   - [ ] title page to do every day
 - [ ] historic
-- [ ] navigation
+- [x] navigation
 - [ ] store
 - [ ] persist data
+
+
+### initial figma:
+![Screenshot_2024-10-14_02-46-14](https://github.com/user-attachments/assets/0ad7fcc3-90ec-4d45-8254-55e2a506ff85)
