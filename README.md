@@ -21,3 +21,6 @@
 
 ### initial figma:
 ![Screenshot_2024-10-14_02-46-14](https://github.com/user-attachments/assets/0ad7fcc3-90ec-4d45-8254-55e2a506ff85)
+
+### prints app:
+![Screenshot_2024-10-14_05-24-47](https://github.com/user-attachments/assets/1e2f7d3c-2ea9-417f-aa7c-2fc7cc1b80f4)
