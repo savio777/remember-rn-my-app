@@ -5,13 +5,15 @@
 - [ ] main screen
   - [ ] title screen custom
   - [ ] checklist with switchs fields
-  - [ ] show tasks to do every day (config)
-  - [ ] set colors to: done, not done, to do, blocked
-  - [ ] show badge if task is marked as every day
+  - [x] show tasks to do every day (config)
+  - [x] set colors to: done, not done, to do, blocked
+  - [x] show badge if task is marked as every day
   - [ ] add new task for just that day
+  - [ ] delete task (if not every day)
 - [ ] config
-  - [ ] tasks to do every day
-  - [ ] clean all historic
+  - [] tasks to do every day
+  - [x] clean all historic
+  - [x] reset config
   - [ ] title page to do every day
 - [ ] historic
 - [x] navigation

@@ -1,13 +1,13 @@
 import {useCallback, useState} from 'react';
 
 const useMain = () => {
-  const [ediTitle, setEdiTitle] = useState(false);
+  const [isOpenModalAdd, setIsOpenModalAdd] = useState(false);
 
-  const handleChangeEditTitle = useCallback(() => {
-    setEdiTitle(oldValue => !oldValue);
+  const handleChangeIsOpenModalAdd = useCallback(() => {
+    setIsOpenModalAdd(oldValue => !oldValue);
   }, []);
 
-  return {ediTitle, handleChangeEditTitle};
+  return {isOpenModalAdd, handleChangeIsOpenModalAdd};
 };
 
 export default useMain;

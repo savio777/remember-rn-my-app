@@ -1,7 +1,7 @@
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {useRef} from 'react';
 import {useTheme} from 'styled-components';
-import {useEffect, useRef} from 'react';
 import {TextInput} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import CheckListItem from '../../components/CheckListItem';
 import {useToDo} from '../../store/toDo';
@@ -15,27 +15,17 @@ export default function Main() {
 
   const {current} = useToDo();
 
-  const {ediTitle, handleChangeEditTitle} = useMain();
+  const {isOpenModalAdd, handleChangeIsOpenModalAdd} = useMain();
 
   const refInputTitle = useRef<TextInput>(null);
-
-  useEffect(() => {
-    if (ediTitle) {
-      refInputTitle.current?.focus();
-    }
-  }, [ediTitle]);
 
   return (
     <ContainerPage>
       <Row>
-        <InputTitle
-          ref={refInputTitle}
-          value={current.title}
-          editable={ediTitle}
-        />
+        <InputTitle ref={refInputTitle} value={current.title} />
 
-        <ButtonEdit onPress={handleChangeEditTitle}>
-          <Icon name="pencil" color={theme.colors.white} size={22} />
+        <ButtonEdit onPress={handleChangeIsOpenModalAdd}>
+          <Icon name="plus" color={theme.colors.white} size={22} />
         </ButtonEdit>
       </Row>
 
