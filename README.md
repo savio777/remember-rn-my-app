@@ -11,7 +11,7 @@
   - [ ] add new task for just that day
   - [ ] delete task (if not every day)
 - [ ] config
-  - [] tasks to do every day
+  - [ ] tasks to do every day
   - [x] clean all historic
   - [x] reset config
   - [ ] title page to do every day
