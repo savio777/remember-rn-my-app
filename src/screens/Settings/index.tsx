@@ -1,11 +1,9 @@
-import {Text} from 'react-native';
-
-import {Container} from './styles';
+import {ContainerPage, Text} from '../../components/Atom';
 
 export default function Settings() {
   return (
-    <Container>
+    <ContainerPage>
       <Text>Settings</Text>
-    </Container>
+    </ContainerPage>
   );
 }

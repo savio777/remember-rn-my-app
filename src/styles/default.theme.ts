@@ -30,4 +30,6 @@ const defaultTheme: DefaultTheme = {
   },
 };
 
+export type IColors = typeof defaultTheme.colors;
+
 export {defaultTheme};

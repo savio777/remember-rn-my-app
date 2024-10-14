@@ -1,11 +1,9 @@
-import {Text} from 'react-native';
-
-import {Container} from './styles';
+import {ContainerPage, Text} from '../../components/Atom';
 
 export default function History() {
   return (
-    <Container>
+    <ContainerPage>
       <Text>History</Text>
-    </Container>
+    </ContainerPage>
   );
 }
