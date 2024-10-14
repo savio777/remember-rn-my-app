@@ -3,9 +3,10 @@ import {useTheme} from 'styled-components';
 import {useEffect, useRef} from 'react';
 import {TextInput} from 'react-native';
 
+import CheckListItem from '../../components/CheckListItem';
 import {useToDo} from '../../store/toDo';
 import {formatDate} from '../../utils/date';
-import {ContainerPage, Text} from '../../components/Atom';
+import {ContainerPage, GenericList, Text} from '../../components/Atom';
 import {ButtonEdit, InputTitle, Row} from './styles';
 import useMain from './useMain';
 
@@ -37,7 +38,14 @@ export default function Main() {
           <Icon name="pencil" color={theme.colors.white} size={22} />
         </ButtonEdit>
       </Row>
-      <Text>{formatDate(current.date)}</Text>
+
+      <Text m="0 0 24px">{formatDate(current.date)}</Text>
+
+      <GenericList
+        keyExtractor={item => item.id}
+        data={current.todos as any[]}
+        renderItem={({item}) => <CheckListItem {...item} />}
+      />
     </ContainerPage>
   );
 }

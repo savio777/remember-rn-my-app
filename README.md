@@ -16,7 +16,7 @@
 - [ ] historic
 - [x] navigation
 - [ ] store
-- [ ] persist data
+- [x] persist data
 
 
 ### initial figma:

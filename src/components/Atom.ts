@@ -1,5 +1,12 @@
-import styled from 'styled-components/native';
-import {TextProps} from 'react-native';
+import styled, {css} from 'styled-components/native';
+import {FlatListProps, TextProps} from 'react-native';
+
+export const GenericList = styled.FlatList.attrs({
+  contentContainerStyle: {
+    flexGrow: 1,
+    gap: 12,
+  },
+} as FlatListProps<any>)``;
 
 type ContainerPageProps = {
   p?: string;
@@ -12,6 +19,8 @@ export const ContainerPage = styled.View<ContainerPageProps>`
 `;
 
 export interface TextCustomProps extends TextProps {
+  flex?: number;
+  m?: string;
   fontWeight?:
     | 'normal'
     | 'bold'
@@ -37,6 +46,13 @@ export const Text = styled.Text<TextCustomProps>`
   text-decoration-line: ${({textDecorationLine}) =>
     textDecorationLine || undefined};
   text-transform: ${({textTransform}) => textTransform || undefined};
-  size: ${({size}) => size || 16}px;
+  font-size: ${({size}) => size || 16}px;
   color: ${({theme, color}) => color || theme.colors.white};
+  margin: ${({m}) => m || 0};
+
+  ${({flex}) =>
+    flex &&
+    css`
+      flex: ${flex};
+    `}
 `;
