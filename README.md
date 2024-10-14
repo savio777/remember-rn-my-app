@@ -1,7 +1,7 @@
 # Remember
 
 ### to do:
-- [ ] figma
+- [x] figma
 - [ ] main screen
   - [ ] title screen custom
   - [ ] checklist with switchs fields
@@ -14,3 +14,6 @@
   - [ ] clean all historic
   - [ ] title page to do every day
 - [ ] historic
+- [ ] navigation
+- [ ] store
+- [ ] persist data
